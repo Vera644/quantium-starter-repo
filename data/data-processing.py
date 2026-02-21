@@ -68,7 +68,7 @@ app.layout = html.Div([
     Output("graph", "figure"),
     Input("checklist", "value"))
 
-def update_line_chart(continents):
+def update_line_chart(data):
     df = filtered_df # replace with your own data source
 
     fig = px.line(df,
